@@ -15,14 +15,21 @@ Designed to help developers quickly integrate Lazorkit in real-world application
 - npm, yarn, or pnpm
 
 ## Quick Start
-Clone repo:
+Clone repository
 git clone https://github.com/TopeGramms/LazorKit.git
 cd Lazorkit
-npm install
-cp .env.example .env.local  # optional
-npm run dev
-Open http://localhost:3000
 
+Install dependencies
+npm install
+
+Set up environment variables (optional)
+cp .env.example .env.local
+
+Run development server
+npm run dev
+
+Open in browser
+http://localhost:3000
 ## Project Structure
 
 ```
