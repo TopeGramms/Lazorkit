@@ -1,51 +1,27 @@
 # Lazorkit Next.js Starter
 
-A production-ready Next.js starter project demonstrating Lazorkit SDK integration with passkey authentication and gasless Solana transactions on Devnet.
+A production-ready Next.js starter demonstrating **passkey smart wallets** and **gasless transactions** on Solana Devnet.  
+Designed to help developers quickly integrate Lazorkit in real-world applications.
 
 ## Features
-
-- **Passkey Authentication**: No seed phrases or extensions - authenticate with Face ID, Touch ID, or fingerprint
-- **Smart Wallet**: On-chain smart wallet with WebAuthn verification
-- **Gasless Transactions**: Send SOL without paying gas fees (sponsored by paymaster)
-- **Session Persistence**: Auto-restore wallet session on page refresh
-- **Modern Stack**: Built with Next.js 14 App Router and TypeScript
-- **Beautiful UI**: Clean, professional interface using shadcn/ui components
-
-## Quick Start
+- Passkey Authentication (Face ID, Touch ID, fingerprint)
+- Smart Wallet (WebAuthn verified)
+- Gasless Transactions (Devnet, paymaster-sponsored)
+- Session Persistence (auto-restore)
+- Built with Next.js 14 + TypeScript
 
 ### Prerequisites
-
 - Node.js 18 or higher
 - npm, yarn, or pnpm
 
-### Installation
-
-1. Clone the repository:
-
-```bash
-git clone <repository-url>
-cd lazorkit-nextjs-starter
-```
-
-2. Install dependencies:
-
-```bash
+## Quick Start
+Clone repo:
+git clone https://github.com/TopeGramms/LazorKit.git
+cd Lazorkit
 npm install
-```
-
-3. (Optional) Configure environment variables:
-
-```bash
-cp .env.example .env.local
-```
-
-4. Run the development server:
-
-```bash
+cp .env.example .env.local  # optional
 npm run dev
-```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
+Open http://localhost:3000
 
 ## Project Structure
 
@@ -133,9 +109,9 @@ export const SOLANA_RPC_URL = clusterApiUrl('devnet');
 ```
 
 ## Tutorials
+- [01-passkey-wallet.md](tutorials/01-passkey-wallet.md)
+- [02-gasless-transaction.md](tutorials/02-gasless-transaction.md)
 
-- [Tutorial 01: Creating a Passkey Wallet](./tutorials/01-passkey-wallet.md)
-- [Tutorial 02: Sending Gasless Transactions](./tutorials/02-gasless-transaction.md)
 
 ## Development
 
